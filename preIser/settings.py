@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'home',
     'gunicorn',
     'psycopg2',
+    'service',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
