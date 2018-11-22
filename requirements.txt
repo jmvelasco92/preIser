@@ -1,4 +1,4 @@
-Django==2.1.1
+Django==2.1.2
 django-bootstrap==0.2.4
 django-bootstrap-form==3.4
 djangorestframework==3.9.0
