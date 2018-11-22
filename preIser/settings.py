@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'preIser.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd1p54jqmakpht8',
         'USER': 'iwzpgjluronwmk',
         'PASSWORD':'372838389afe45d737a57f20d7ab37f6b3c8043c42f662b63a581ef42f27b0c8',
