@@ -29,7 +29,7 @@ def vista_login(request):
 			formulario=login_form()
 		return render(request,'login.html',locals())
 
-
+#doc de prueba
 def vista_logout(request):
 	logout(request)
 	return redirect('vista_login')
@@ -53,6 +53,7 @@ def vista_agregar_marca(request):
 			marca.status=True
 			marca.save()
 			return redirect('/lista_marca/')
+
 
 	else:
 		formulario = agregar_marca_form()
