@@ -25,7 +25,7 @@ SECRET_KEY = '$xk=uye&^$o!yr$g9#54t5osd-=*2$txe89k5(z*+c_s28_$v^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrapform',
     'home',
+    'gunicorn',
+    'psycopg2',
 ]
 
 MIDDLEWARE = [
@@ -78,11 +80,11 @@ WSGI_APPLICATION = 'preIser.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'p10',
-        'USER': 'root',
-        'PASSWORD':'',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'NAME': 'd1p54jqmakpht8',
+        'USER': 'iwzpgjluronwmk',
+        'PASSWORD':'372838389afe45d737a57f20d7ab37f6b3c8043c42f662b63a581ef42f27b0c8',
+        'HOST': 'ec2-54-235-193-0.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -127,5 +129,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"static"),
 ]
+
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
 MEDIA_ROOT = 'media'
 MEDIA_URL = '/media/'
+#configuracion
