@@ -8,4 +8,8 @@ Pillow==5.3.0
 psycopg2==2.7.6.1
 pytz==2018.5
 psycopg2-binary==2.7.6.1
+<<<<<<< HEAD
 django-rest-framework==0.1.0
+=======
+django-rest-framework==0.1.0
+>>>>>>> 8ec85ec960fb7b3dacc958b3bba0ce02a1376529

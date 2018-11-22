@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'preIser.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd1p54jqmakpht8',
         'USER': 'iwzpgjluronwmk',
         'PASSWORD':'372838389afe45d737a57f20d7ab37f6b3c8043c42f662b63a581ef42f27b0c8',
@@ -126,13 +126,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"static"),
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
 
 MEDIA_ROOT = 'media'
 MEDIA_URL = '/media/'
