@@ -29,7 +29,7 @@ def vista_login(request):
 			formulario=login_form()
 		return render(request,'login.html',locals())
 
-#doc de prueba
+#doc de prueba msj
 def vista_logout(request):
 	logout(request)
 	return redirect('vista_login')
